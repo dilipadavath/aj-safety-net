@@ -1,5 +1,6 @@
 ---
 import "@/index.css";
+import faviconUrl from "@/assets/favicon.png";
 import {
   DEFAULT_OG_IMAGE,
   SITE_NAME,
@@ -38,9 +39,9 @@ const schemaList = [getLocalBusinessSchema(), ...(schema ? (Array.isArray(schema
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="shortcut icon" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="icon" type="image/png" href={faviconUrl.src} />
+    <link rel="shortcut icon" href={faviconUrl.src} />
+    <link rel="apple-touch-icon" href={faviconUrl.src} />
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
     <meta name="robots" content={robots} />

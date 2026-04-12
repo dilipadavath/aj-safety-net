@@ -1,3 +1,3 @@
-# Vicky Safety Nets Showcase
+# AJ Safety Nets Showcase
 
-Astro + React project for the Vicky Safety Nets website.
+Astro + React project for the AJ Safety Nets website.

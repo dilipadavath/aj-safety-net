@@ -1,9 +1,9 @@
 export const SITE_URL = "https://vickysafetynets.com";
-export const SITE_NAME = "Vicky Safety Nets";
+export const SITE_NAME = "AJ Safety Nets";
 export const DEFAULT_OG_IMAGE = "/vicky-logo.png";
 
 export const BUSINESS = {
-  name: "Vicky Safety Nets",
+  name: "AJ Safety Nets",
   phone: "+91 7795891177",
   email: "vickysafetynets552@gmail.com",
   address: "# 17, 17th Cross, MES Road, Muthyalanagar, Bangalore-54",

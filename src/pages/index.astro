@@ -1,0 +1,23 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import IndexPage from "@/views/Index";
+import { getBreadcrumbSchema, getPageSchema, SITE_URL } from "@/lib/seo";
+
+const title =
+  "Safety Nets In Bangalore | Balcony, Pigeon, Bird & Sports Nets - Vicky Safety Nets";
+const description =
+  "Vicky Safety Nets provides balcony safety nets, pigeon nets, bird protection and sports nets installation across Bangalore with free site visit and quick quote.";
+const path = "/";
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath={path}
+  schema={[
+    getPageSchema(`${SITE_URL}${path}`, title, description),
+    getBreadcrumbSchema([{ name: "Home", path: "/" }]),
+  ]}
+>
+  <IndexPage client:load />
+</BaseLayout>

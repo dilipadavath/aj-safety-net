@@ -1,0 +1,25 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import SafetyNetsPage from "@/views/SafetyNets";
+import { getBreadcrumbSchema, getPageSchema, SITE_URL } from "@/lib/seo";
+
+const title = "Safety Nets Services In Bangalore | Balcony, Kids, Pets & More";
+const description =
+  "Explore complete safety net services in Bangalore including balcony safety nets, staircase nets, duct area nets, building nets and industrial safety nets.";
+const path = "/safety-nets/";
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath={path}
+  schema={[
+    getPageSchema(`${SITE_URL}${path}`, title, description),
+    getBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Safety Nets", path },
+    ]),
+  ]}
+>
+  <SafetyNetsPage client:load />
+</BaseLayout>

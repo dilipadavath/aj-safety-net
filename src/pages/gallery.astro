@@ -1,0 +1,25 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import GalleryPage from "@/views/Gallery";
+import { getBreadcrumbSchema, getPageSchema, SITE_URL } from "@/lib/seo";
+
+const title = "Safety Nets Installation Gallery | Vicky Safety Nets Bangalore";
+const description =
+  "Browse installation photos of balcony safety nets, pigeon nets, bird protection and sports nets completed by Vicky Safety Nets across Bangalore.";
+const path = "/gallery/";
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath={path}
+  schema={[
+    getPageSchema(`${SITE_URL}${path}`, title, description),
+    getBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Gallery", path },
+    ]),
+  ]}
+>
+  <GalleryPage client:load />
+</BaseLayout>

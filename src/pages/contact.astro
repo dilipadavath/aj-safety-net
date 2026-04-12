@@ -1,0 +1,25 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ContactPage from "@/views/Contact";
+import { getBreadcrumbSchema, getPageSchema, SITE_URL } from "@/lib/seo";
+
+const title = "Contact Vicky Safety Nets Bangalore | Free Site Visit & Quote";
+const description =
+  "Contact Vicky Safety Nets for balcony nets, pigeon nets, bird spikes and sports nets in Bangalore. Call +91 7795891177 for free site visit.";
+const path = "/contact/";
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath={path}
+  schema={[
+    getPageSchema(`${SITE_URL}${path}`, title, description),
+    getBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Contact", path },
+    ]),
+  ]}
+>
+  <ContactPage client:load />
+</BaseLayout>

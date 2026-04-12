@@ -1,0 +1,57 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import FAQPage from "@/views/FAQ";
+import { getBreadcrumbSchema, getPageSchema, SITE_URL } from "@/lib/seo";
+
+const title = "Safety Nets FAQ | Installation, Materials, Service Areas Bangalore";
+const description =
+  "Frequently asked questions about safety net installation, materials, same-day service, warranty and coverage areas in Bangalore.";
+const path = "/faq/";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What types of safety nets do you provide?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We provide balcony safety nets, pigeon nets, bird protection nets, sports nets, industrial safety nets, staircase nets and more.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you provide free installation?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, we provide free installation with every safety net purchase in Bangalore.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How do I get a quote?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Call +91 7795891177 or email vickysafetynets552@gmail.com to schedule a free site visit and quotation.",
+      },
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath={path}
+  schema={[
+    getPageSchema(`${SITE_URL}${path}`, title, description),
+    getBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "FAQ", path },
+    ]),
+    faqSchema,
+  ]}
+>
+  <FAQPage client:load />
+</BaseLayout>

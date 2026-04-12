@@ -1,0 +1,25 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import AllSportsNetsPage from "@/views/AllSportsNets";
+import { getBreadcrumbSchema, getPageSchema, SITE_URL } from "@/lib/seo";
+
+const title = "Sports Nets Installation In Bangalore | Cricket, Football & More";
+const description =
+  "Professional sports net installation in Bangalore for cricket practice nets, ball stop nets, football netting and custom sports ground safety net solutions.";
+const path = "/sports-nets/";
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath={path}
+  schema={[
+    getPageSchema(`${SITE_URL}${path}`, title, description),
+    getBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Sports Nets", path },
+    ]),
+  ]}
+>
+  <AllSportsNetsPage client:load />
+</BaseLayout>

@@ -1,0 +1,50 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ServiceDetailPage from "@/views/ServiceDetail";
+import { serviceData } from "@/views/ServiceDetail";
+import { sportsNetTypes } from "@/lib/routes";
+import { getBreadcrumbSchema, getPageSchema, SITE_URL } from "@/lib/seo";
+
+export function getStaticPaths() {
+  return sportsNetTypes.map((type) => ({ params: { type } }));
+}
+
+const { type } = Astro.params;
+const selectedType = type && type in serviceData ? type : "cricket";
+const service = serviceData[selectedType];
+const path = `/sports-nets/${selectedType}/`;
+const title = `${service.title} | Vicky Safety Nets`;
+const description =
+  service.description[0]?.slice(0, 155) ??
+  "Professional sports nets installation services in Bangalore.";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: service.title,
+  description,
+  areaServed: "Bangalore",
+  provider: {
+    "@type": "LocalBusiness",
+    name: "Vicky Safety Nets",
+    url: SITE_URL,
+  },
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath={path}
+  schema={[
+    getPageSchema(`${SITE_URL}${path}`, title, description),
+    getBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Sports Nets", path: "/sports-nets/" },
+      { name: service.title, path },
+    ]),
+    serviceSchema,
+  ]}
+>
+  <ServiceDetailPage client:load type={type} />
+</BaseLayout>

@@ -1,0 +1,25 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import BirdProtectionPage from "@/views/BirdProtection";
+import { getBreadcrumbSchema, getPageSchema, SITE_URL } from "@/lib/seo";
+
+const title = "Bird Protection Nets In Bangalore | Pigeon Nets & Bird Spikes";
+const description =
+  "Bird protection services in Bangalore including pigeon nets, anti-bird nets, sparrow nets, and bird spikes for balconies, windows and buildings.";
+const path = "/bird-protection/";
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath={path}
+  schema={[
+    getPageSchema(`${SITE_URL}${path}`, title, description),
+    getBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Bird Protection Nets", path },
+    ]),
+  ]}
+>
+  <BirdProtectionPage client:load />
+</BaseLayout>

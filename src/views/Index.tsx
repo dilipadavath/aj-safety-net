@@ -230,7 +230,7 @@ const Index = () => {
                 </a>
               </div>
             </div>
-            <div className="mt-8 grid gap-4 grid-cols-4">
+            <div className="mt-8 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
               {leadHighlights.map((item) => (
                 <div key={item.title} className="rounded-2xl border border-border bg-background p-5">
                   <item.icon className="mb-3 h-8 w-8 text-primary" />

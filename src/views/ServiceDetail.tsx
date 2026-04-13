@@ -41,7 +41,7 @@ export const serviceData: Record<string, ServiceInfo> = {
     title: "Balcony Safety Nets in Bangalore",
     image: balconyNets,
     description: [
-      "Vicky Safety Nets provides premium quality balcony safety nets installation services across Bangalore. Our balcony safety nets are made from high-grade nylon and HDPE material that is UV-resistant, weather-proof, and highly durable.",
+      "AJ Safety Nets provides premium quality balcony safety nets installation services across Bangalore. Our balcony safety nets are made from high-grade nylon and HDPE material that is UV-resistant, weather-proof, and highly durable.",
       "Living in a high-rise apartment comes with the risk of accidental falls from balconies, especially for children and pets. Our safety nets act as an invisible shield that provides complete protection without blocking your view or ventilation.",
       "We offer free site inspection and same-day installation service. Our experienced team ensures perfect fitting with minimal drilling and no damage to your property."
     ],
@@ -87,7 +87,7 @@ export const serviceData: Record<string, ServiceInfo> = {
     title: "Terrace Top Safety Nets in Bangalore",
     image: terraceTopNew,
     description: [
-      "Cover your terrace with high-quality safety nets from Vicky Safety Nets. Terrace top nets prevent accidental falls and keep your terrace area safe for all activities.",
+      "Cover your terrace with high-quality safety nets from AJ Safety Nets. Terrace top nets prevent accidental falls and keep your terrace area safe for all activities.",
       "Our terrace nets are ideal for residential buildings, schools, and commercial properties. They provide protection from falls while allowing sunlight and air to pass through.",
       "We use heavy-duty nylon nets with steel cable support for large terrace areas, ensuring the nets remain taut and effective in all weather conditions."
     ],
@@ -112,7 +112,7 @@ export const serviceData: Record<string, ServiceInfo> = {
     description: [
       "Complete building safety net solutions for residential complexes, commercial buildings, and high-rise structures. Our nets prevent falls from heights and protect both residents and pedestrians.",
       "We install safety nets around the entire building perimeter, duct areas, open shafts, and common areas. Our nets are designed to withstand heavy loads and extreme weather.",
-      "Building safety nets are now mandatory in many residential complexes. Vicky Safety Nets provides compliant installation with proper documentation."
+      "Building safety nets are now mandatory in many residential complexes. AJ Safety Nets provides compliant installation with proper documentation."
     ],
     features: ["Full building coverage", "Heavy load capacity", "Compliance documentation", "Perimeter protection", "Duct area coverage", "Long-lasting material"]
   },
@@ -150,7 +150,7 @@ export const serviceData: Record<string, ServiceInfo> = {
     title: "Construction Safety Nets in Bangalore",
     image: buildingNets,
     description: [
-      "Construction safety nets are mandatory at construction sites to prevent falls and catch debris. Vicky Safety Nets provides government-compliant construction safety nets.",
+      "Construction safety nets are mandatory at construction sites to prevent falls and catch debris. AJ Safety Nets provides government-compliant construction safety nets.",
       "We offer debris nets, scaffold nets, fall arrest nets, and perimeter safety nets for construction sites of all sizes.",
       "Our construction nets meet IS standards and come with quality certification. We also provide installation and removal services."
     ],
@@ -360,7 +360,7 @@ export const serviceData: Record<string, ServiceInfo> = {
     image: sportsNets,
     description: [
       "Nets for cricket, football, badminton, volleyball, tennis, throwball, and all other sports. Custom sizes and specifications available.",
-      "Whether you need a small backyard practice net or a full stadium installation, Vicky Safety Nets has the right solution for you.",
+      "Whether you need a small backyard practice net or a full stadium installation, AJ Safety Nets has the right solution for you.",
       "We source our sports nets from premium manufacturers and guarantee quality and durability."
     ],
     features: ["All sports covered", "Custom specifications", "Premium quality", "Backyard to stadium", "Competitive pricing", "Quality guarantee"]
@@ -379,7 +379,7 @@ const ServiceDetail = ({ type }: ServiceDetailProps) => {
       <ParallaxSection backgroundImage={parallaxBg}>
         <div className="container text-center">
           <h1 className="text-3xl md:text-5xl font-heading font-bold text-cta mb-4">{service.title}</h1>
-          <p className="text-background/80 text-lg">Professional Installation by Vicky Safety Nets</p>
+          <p className="text-background/80 text-lg">Professional Installation by AJ Safety Nets</p>
         </div>
       </ParallaxSection>
 

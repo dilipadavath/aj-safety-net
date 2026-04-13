@@ -1,6 +1,6 @@
-export const SITE_URL = "https://vickysafetynets.com";
+export const SITE_URL = "https://ajsafetynets.com";
 export const SITE_NAME = "AJ Safety Nets";
-export const DEFAULT_OG_IMAGE = "/vicky-logo.png";
+export const DEFAULT_OG_IMAGE = "/aj-logo.png";
 
 export const BUSINESS = {
   name: "AJ Safety Nets",

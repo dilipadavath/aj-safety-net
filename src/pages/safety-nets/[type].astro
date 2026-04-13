@@ -13,7 +13,7 @@ const { type } = Astro.params;
 const selectedType = type && type in serviceData ? type : "balcony";
 const service = serviceData[selectedType];
 const path = `/safety-nets/${selectedType}/`;
-const title = `${service.title} | Vicky Safety Nets`;
+const title = `${service.title} | AJ Safety Nets`;
 const description =
   service.description[0]?.slice(0, 155) ??
   "Professional safety net installation services in Bangalore.";
@@ -26,7 +26,7 @@ const serviceSchema = {
   areaServed: "Bangalore",
   provider: {
     "@type": "LocalBusiness",
-    name: "Vicky Safety Nets",
+    name: "AJ Safety Nets",
     url: SITE_URL,
   },
 };

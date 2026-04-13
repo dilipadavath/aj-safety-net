@@ -249,9 +249,9 @@ const Index = () => {
       {/* Welcome Section */}
       <section className="py-16 bg-muted">
         <div className="container max-w-4xl text-center">
-          <h2 className="section-title mb-6">Welcome to Vicky Safety Nets</h2>
+          <h2 className="section-title mb-6">Welcome to AJ Safety Nets</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Vicky Safety Nets is one of the major traders and giving the best service across Bangalore. We have a net installation professional, who can fix nets in any safety required areas. We attempt to get flawlessness in the plans in every one of our items and Ensure Timely delivery.
+            AJ Safety Nets is one of the major traders and giving the best service across Bangalore. We have a net installation professional, who can fix nets in any safety required areas. We attempt to get flawlessness in the plans in every one of our items and Ensure Timely delivery.
           </p>
           <p className="text-muted-foreground leading-relaxed">
             Apart from our immense scope of items, we give simply the best as far as quality and no trade off is made surveys on this front. Also, we Ensure That All our items are accessible at focused costs and achieve our clients before the due date. We provide services for Balcony Safety Nets, Pigeon Nets, Bird Protection Nets, Anti Bird Nets, Children Safety Nets, Swimming Pool Safety Nets, Cricket Practice Nets and all types of sports nets across Bangalore.
@@ -334,7 +334,7 @@ const Index = () => {
         <div className="container max-w-3xl text-center">
           <div className="text-4xl text-cta mb-4">"</div>
           <p className="text-background/90 text-lg italic mb-4">
-            Well done job. Done the safety net work in the balcony of our house for kids safety and it was done well and the price was very reasonable. Over all happy with the service. Highly recommend Vicky Safety Nets for their professional installation.
+            Well done job. Done the safety net work in the balcony of our house for kids safety and it was done well and the price was very reasonable. Over all happy with the service. Highly recommend AJ Safety Nets for their professional installation.
           </p>
           <p className="text-background font-heading font-bold">— Rajesh, Bangalore</p>
         </div>

@@ -108,9 +108,9 @@ const Contact = () => {
             </div>
           </div>
           {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="bg-card rounded-xl shadow-lg p-8 border border-primary/10 space-y-6">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-2">Send Us a Message</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <form onSubmit={handleSubmit} className="bg-card rounded-xl shadow-lg p-8 border border-primary/10 space-y-8">
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">Send Us a Message</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <input
                 type="text"
                 name="name"
@@ -130,20 +130,21 @@ const Contact = () => {
                 className="input input-bordered rounded-lg px-4 py-3 text-base bg-background border border-border focus:border-primary focus:ring-2 focus:ring-primary/20"
               />
             </div>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Email (optional)"
-              className="input input-bordered rounded-lg px-4 py-3 text-base bg-background border border-border focus:border-primary focus:ring-2 focus:ring-primary/20"
-            />
-            <select
-              name="service"
-              value={formData.service}
-              onChange={handleChange}
-              className="input input-bordered rounded-lg px-4 py-3 text-base bg-background border border-border focus:border-primary focus:ring-2 focus:ring-primary/20"
-            >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Email (optional)"
+                className="input input-bordered rounded-lg px-4 py-3 text-base bg-background border border-border focus:border-primary focus:ring-2 focus:ring-primary/20"
+              />
+              <select
+                name="service"
+                value={formData.service}
+                onChange={handleChange}
+                className="input input-bordered rounded-lg px-4 py-3 text-base bg-background border border-border focus:border-primary focus:ring-2 focus:ring-primary/20"
+              >
               <option value="">Select Service</option>
               <option>Balcony Safety Nets</option>
               <option>Pigeon Nets</option>
@@ -154,15 +155,16 @@ const Contact = () => {
               <option>Staircase Safety Nets</option>
               <option>Other</option>
             </select>
+            </div>
             <textarea
               name="message"
               value={formData.message}
               onChange={handleChange}
               placeholder="Your Message"
               rows={4}
-              className="input input-bordered rounded-lg px-4 py-3 text-base bg-background border border-border focus:border-primary focus:ring-2 focus:ring-primary/20"
+              className="input input-bordered rounded-lg px-4 py-3 text-base bg-background border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 w-full"
             />
-            <button type="submit" className="cta-button btn-lg text-lg font-bold w-full mt-2">Send Message</button>
+            <button type="submit" className="cta-button btn-lg text-lg font-bold w-full">Send Message</button>
           </form>
         </div>
       </section>
@@ -170,18 +172,20 @@ const Contact = () => {
       {/* Map Embed */}
       <section className="py-8 bg-gradient-to-r from-primary/10 to-secondary/10">
         <div className="container">
+          <h2 className="text-2xl font-heading font-bold text-primary mb-6 text-center">Our Service Area - Bangalore</h2>
           <div className="rounded-2xl overflow-hidden shadow-xl border border-primary/10">
             <iframe
-              title="AJ Safety Nets Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.123456789!2d77.540000!3d13.040000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMTPCsDAyJzI0LjAiTiA3N8KwMzInMjQuMCJF!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+              title="AJ Safety Nets Location - Bangalore"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248431.49999999997!2d77.3910061!3d12.9352403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d:0xf00ef62e9a88a42!2sBangalore!5e0!3m2!1sen!2sin!4v1712973600000!5m2!1sen!2sin"
               width="100%"
-              height="350"
+              height="400"
               style={{ border: 0 }}
               allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
+          <p className="text-center text-muted-foreground mt-4">We provide safety net services across Bangalore. Contact us for free site visit to your location.</p>
         </div>
       </section>
 

@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://vickysafetynets.com/sitemap.xml
+Sitemap: https://ajsafetynets.com/sitemap.xml

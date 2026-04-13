@@ -4,7 +4,7 @@ import tailwind from "@astrojs/tailwind";
 import { fileURLToPath } from "node:url";
 
 export default defineConfig({
-  site: "https://vickysafetynets.com",
+  site: "https://ajsafetynets.com",
   integrations: [react(), tailwind()],
   server: {
     host: true,

@@ -17,7 +17,7 @@ const faqs = [
   { q: "Do your nets come with a warranty?", a: "Yes, all our safety nets come with a warranty. The warranty period varies based on the product and material type. Contact us for specific warranty details." },
   { q: "Are your nets safe for children?", a: "Absolutely! Our nets are specifically designed with child safety in mind. We use non-toxic materials with appropriate mesh sizes that children cannot pass through." },
   { q: "Can safety nets be removed later?", a: "Yes, our safety nets can be removed when no longer needed. The installation method we use causes minimal damage to your property." },
-  { q: "How do I get a quote?", a: "Simply call us at +91 6363331537 or +91 9886061537 or email us at vickysafetynets552@gmail.com. We will arrange a free site visit and provide a detailed quote based on your requirements." },
+  { q: "How do I get a quote?", a: "Simply call us at +91 6363331537 or email us at vickysafetynets552@gmail.com. We will arrange a free site visit and provide a detailed quote based on your requirements." },
 ];
 
 const FAQ = () => {
@@ -61,8 +61,7 @@ const FAQ = () => {
           <div className="mt-10 text-center">
             <p className="text-lg font-semibold mb-3">Didn't find your answer?</p>
             <a href="tel:6363331537" className="cta-button btn-md text-base font-bold shadow-md inline-block mx-2">Call 6363331537</a>
-            <a href="tel:9886061537" className="cta-button btn-md text-base font-bold shadow-md inline-block mx-2">Call 9886061537</a>
-            <a href="https://wa.me/917795891177" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-[#25D366] hover:bg-[#1ebe5a] px-6 py-3 text-base font-bold text-white transition-all duration-300 shadow-md mx-2">
+            <a href="https://wa.me/916363331537" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-[#25D366] hover:bg-[#1ebe5a] px-6 py-3 text-base font-bold text-white transition-all duration-300 shadow-md mx-2">
               WhatsApp
             </a>
           </div>

@@ -52,6 +52,10 @@ export default {
           DEFAULT: "hsl(var(--topbar))",
           foreground: "hsl(var(--topbar-foreground))",
         },
+        header: {
+          DEFAULT: "hsl(var(--header))",
+          foreground: "hsl(var(--header-foreground))",
+        },
         cta: {
           DEFAULT: "hsl(var(--cta))",
           foreground: "hsl(var(--cta-foreground))",

@@ -95,9 +95,9 @@ const Footer = () => {
                 <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-background group-hover:scale-110 transition-transform" />
                 <p className="text-sm opacity-90 font-medium"># 17, 17th Cross, MES Road, Muthyalanagar, Bangalore-54</p>
               </div>
-              <a href="tel:7795891177" className="flex items-center gap-3 p-4 rounded-lg hover:bg-white/10 transition-all duration-300 hover:translate-x-1 group hover-lift click-press">
+              <a href="tel:6363331537" className="flex items-center gap-3 p-4 rounded-lg hover:bg-white/10 transition-all duration-300 hover:translate-x-1 group hover-lift click-press">
                 <Phone className="h-5 w-5 shrink-0 text-background group-hover:animate-pulse" />
-                <span className="text-sm font-semibold">+91 7795891177</span>
+                <span className="text-sm font-semibold">+91 6363331537</span>
               </a>
               <a href="mailto:vickysafetynets552@gmail.com" className="flex items-center gap-3 p-4 rounded-lg hover:bg-white/10 transition-all duration-300 hover:translate-x-1 group hover-lift click-press">
                 <Mail className="h-5 w-5 shrink-0 text-background" />
@@ -111,6 +111,17 @@ const Footer = () => {
       <div className="border-t border-background/30 py-8 text-center">
         <p className="text-sm font-semibold text-background/80">© {new Date().getFullYear()} AJ Safety Nets, Bangalore. All Rights Reserved.</p>
         <p className="text-xs text-background/60 mt-3">Premium Safety Solutions • Professional Installation • Lifetime Support</p>
+        <p className="text-xs text-background/50 mt-2">
+          Designed by{" "}
+          <a
+            href="https://www.asksolutionsindia.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-background/80 transition-colors"
+          >
+            Ask Solutions
+          </a>
+        </p>
       </div>
     </footer>
   );

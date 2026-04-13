@@ -58,16 +58,16 @@ interface DropdownProps {
 const NavDropdown = ({ label, items, isActive }: DropdownProps) => {
   return (
     <div className="relative group">
-      <button className={`flex items-center gap-1 px-3 py-1.5 font-heading text-xs md:text-sm font-medium transition-colors ${isActive ? "text-secondary" : "text-foreground hover:text-primary"}`}>
+      <button className={`flex items-center gap-1 px-3 py-1.5 font-heading text-xs md:text-sm font-medium transition-colors ${isActive ? "text-primary" : "text-header-foreground hover:text-primary"}`}>
         {label}
         <ChevronDown className="w-2.5 h-2.5 transition-transform group-hover:rotate-180" />
       </button>
-      <div className="absolute left-0 top-full z-50 hidden min-w-[220px] max-h-[calc(100vh-9rem)] overflow-y-auto rounded bg-foreground shadow-xl group-hover:block">
+      <div className="absolute left-0 top-full z-50 hidden min-w-[220px] max-h-[calc(100vh-9rem)] overflow-y-auto rounded bg-header shadow-xl group-hover:block border border-header-foreground/20">
         {items.map((item) => (
           <a
             key={item.path}
             href={item.path}
-            className="block px-4 py-2.5 text-sm text-background/90 hover:text-cta transition-colors hover:bg-foreground/90"
+            className="block px-4 py-2.5 text-sm text-header-foreground hover:text-primary transition-colors hover:bg-primary/10"
           >
             {item.label}
           </a>
@@ -98,22 +98,19 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-background shadow-lg">
+    <header className="sticky top-0 z-50 bg-header shadow-lg">
       {/* Contact Bar */}
-      <div className="topbar-bg py-1.5 border-b border-secondary/20">
-        <div className="container flex flex-col gap-1 text-topbar-foreground text-xs sm:flex-row sm:items-center sm:justify-between sm:text-xs font-medium">
-          <a href="tel:6363331537" className="flex items-center justify-center gap-2 text-center hover:text-secondary transition-colors duration-300 sm:justify-start">
+      <div className="bg-header py-1.5 border-b border-header-foreground/10">
+        <div className="container flex flex-col gap-1 text-header-foreground text-xs sm:flex-row sm:items-center sm:justify-between sm:text-xs font-medium">
+          <a href="tel:6363331537" className="flex items-center justify-center gap-2 text-center hover:text-primary transition-colors duration-300 sm:justify-start">
             <Phone className="w-3.5 h-3.5" />
             <span className="font-bold">+91 6363331537</span>
           </a>
-          <a href="tel:9886061537" className="flex items-center justify-center gap-2 text-center hover:text-secondary transition-colors duration-300 sm:justify-start ml-4">
-            <Phone className="w-3.5 h-3.5" />
-            <span className="font-bold">+91 9886061537</span>
-          </a>
+
         </div>
       </div>
 
-      <nav className="bg-white/80 backdrop-blur-xl shadow-lg border-b border-foreground/5">
+      <nav className="bg-header shadow-lg border-b border-header-foreground/10">
         <div className="container-max flex items-center justify-between gap-4 py-2.5 md:py-3">
           <a href="/" className="flex items-center gap-2">
   <img
@@ -125,14 +122,14 @@ const Header = () => {
     <h1 className="font-heading font-bold text-primary text-lg md:text-xl">
       AJ Safety Nets
     </h1>
-    <p className="font-heading text-secondary text-xs md:text-sm font-semibold">
+    <p className="font-heading text-header-foreground/90 text-xs md:text-sm font-semibold">
       Invisible Grilles
     </p>
   </div>
 </a>
 
           <div className="hidden lg:flex items-center gap-1">
-            <a href="/" className={`px-3 py-1.5 text-sm btn-md font-heading font-semibold rounded-lg transition-all duration-300 hover-lift click-press ${pathname === "/" ? "text-secondary bg-secondary/10" : "text-foreground hover:text-secondary hover:bg-foreground/5"}`}>
+            <a href="/" className={`px-3 py-1.5 text-sm btn-md font-heading font-semibold rounded-lg transition-all duration-300 hover-lift click-press ${pathname === "/" ? "text-primary bg-primary/10" : "text-header-foreground hover:text-primary hover:bg-primary/10"}`}>
               Home
             </a>
             {allDropdowns.map((dd) => (
@@ -143,7 +140,7 @@ const Header = () => {
                 isActive={pathname.startsWith(dd.prefix)}
               />
             ))}
-            <a href="/contact" className={`px-3 py-1.5 text-sm btn-md font-heading font-semibold rounded-lg transition-all duration-300 hover-lift click-press ${pathname === "/contact" ? "text-secondary bg-secondary/10" : "text-foreground hover:text-secondary hover:bg-foreground/5"}`}>
+            <a href="/contact" className={`px-3 py-1.5 text-sm btn-md font-heading font-semibold rounded-lg transition-all duration-300 hover-lift click-press ${pathname === "/contact" ? "text-primary bg-primary/10" : "text-header-foreground hover:text-primary hover:bg-primary/10"}`}>
               Contact
             </a>
           </div>
@@ -151,28 +148,26 @@ const Header = () => {
           <a href="tel:6363331537" className="hidden lg:block cta-button btn-md text-sm md:text-base click-press mr-2">
             Call 6363331537
           </a>
-          {/* <a href="tel:9886061537" className="hidden lg:block cta-button btn-md text-sm md:text-base click-press ml-2">
-            Call 9886061537
-          </a> */}
 
-          <button onClick={() => setMobileOpen(!mobileOpen)} className="lg:hidden p-3 hover:bg-foreground/5 rounded-lg transition-colors hover-lift">
+
+          <button onClick={() => setMobileOpen(!mobileOpen)} className="lg:hidden p-3 hover:bg-header-foreground/10 rounded-lg transition-colors hover-lift text-header-foreground">
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 
         {mobileOpen && (
-          <div className="lg:hidden bg-background border-t pb-4 space-between-normal">
-            <a href="/" onClick={() => setMobileOpen(false)} className="block px-6 py-3 font-heading text-sm font-medium hover:bg-muted transition-colors hover-lift">Home</a>
+          <div className="lg:hidden bg-header border-t pb-4 space-between-normal">
+            <a href="/" onClick={() => setMobileOpen(false)} className="block px-6 py-3 font-heading text-sm font-medium text-header-foreground hover:bg-primary/10 transition-colors hover-lift">Home</a>
             {allDropdowns.map((dd) => (
               <div key={dd.name}>
-                <button onClick={() => toggleMobileDropdown(dd.name)} className="w-full flex justify-between items-center px-6 py-3 font-heading text-sm font-medium hover:bg-muted transition-colors">
+                <button onClick={() => toggleMobileDropdown(dd.name)} className="w-full flex justify-between items-center px-6 py-3 font-heading text-sm font-medium text-header-foreground hover:bg-primary/10 transition-colors">
                   {dd.name}
                   <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${openMobileDropdown === dd.name ? "rotate-180" : ""}`} />
                 </button>
                 {openMobileDropdown === dd.name && (
-                  <div className="bg-muted space-between-tight">
+                  <div className="bg-header/80 space-between-tight">
                     {dd.items.map((item) => (
-                      <a key={item.path} href={item.path} onClick={() => setMobileOpen(false)} className="block px-10 py-2.5 text-sm hover:text-primary transition-colors hover-lift">
+                      <a key={item.path} href={item.path} onClick={() => setMobileOpen(false)} className="block px-10 py-2.5 text-sm text-header-foreground hover:text-primary transition-colors hover-lift">
                         {item.label}
                       </a>
                     ))}
@@ -180,10 +175,9 @@ const Header = () => {
                 )}
               </div>
             ))}
-            <a href="/contact" onClick={() => setMobileOpen(false)} className="block px-6 py-3 font-heading text-sm font-medium hover:bg-muted transition-colors hover-lift">Contact</a>
+            <a href="/contact" onClick={() => setMobileOpen(false)} className="block px-6 py-3 font-heading text-sm font-medium text-header-foreground hover:bg-primary/10 transition-colors hover-lift">Contact</a>
             <div className="px-6 pt-2">
               <a href="tel:6363331537" className="cta-button block text-center btn-md text-sm click-press mb-2">Call 6363331537</a>
-              <a href="tel:9886061537" className="cta-button block text-center btn-md text-sm click-press">Call 9886061537</a>
             </div>
           </div>
         )}

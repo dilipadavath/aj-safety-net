@@ -85,7 +85,6 @@ const Gallery = () => {
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-background mb-2 md:mb-0">Want to see more or book a free site visit?</h2>
           <div className="flex gap-3">
             <a href="tel:6363331537" className="cta-button btn-lg text-lg md:text-xl font-bold shadow-xl">Call 6363331537</a>
-            <a href="tel:9886061537" className="cta-button btn-lg text-lg md:text-xl font-bold shadow-xl">Call 9886061537</a>
           </div>
         </div>
       </section>

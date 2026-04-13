@@ -5,8 +5,8 @@ declare global {
   }
 }
 
-export const BUSINESS_PHONE = "7795891177";
-export const BUSINESS_PHONE_E164 = "917795891177";
+export const BUSINESS_PHONE = "6363331537";
+export const BUSINESS_PHONE_E164 = "916363331537";
 export const WHATSAPP_URL = `https://wa.me/${BUSINESS_PHONE_E164}?text=${encodeURIComponent(
   "Hello, I need a quote for safety nets in Bangalore."
 )}`;

@@ -180,11 +180,11 @@ const Index = () => {
       <HeroSlider />
       
       {/* Announcement Bar */}
-      <div className="bg-primary/95 overflow-hidden py-1">
+      {/* <div className="bg-primary/95 overflow-hidden py-1">
         <div className="animate-slide-text pause-on-hover whitespace-nowrap text-xs text-primary-foreground/90 font-medium">
           ✓ Balcony Safety Nets • Pigeon Nets Installation • Building Safety Nets • Industrial Safety Nets • Children Safety Nets • Free Site Visit • Same-Day Service • Professional Installation
         </div>
-      </div>
+      </div> */}
       
       <EnquiryBar />
 

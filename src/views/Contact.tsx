@@ -77,13 +77,7 @@ const Contact = () => {
                 >
                   +91 6363331537
                 </a>
-                <a
-                  href="tel:9886061537"
-                  onClick={() => trackLeadClick("call", "contact_page")}
-                  className="text-primary hover:underline text-lg font-semibold block mt-1"
-                >
-                  +91 9886061537
-                </a>
+
               </div>
             </div>
             <div className="flex items-start gap-4 bg-card rounded-xl shadow-lg p-5 border border-primary/10">
@@ -195,8 +189,7 @@ const Contact = () => {
       <section className="py-10 bg-primary/90">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-6">
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-background mb-2 md:mb-0">Prefer to talk directly? Call us now!</h2>
-          <a href="tel:6363331537" className="cta-button btn-lg text-lg md:text-xl font-bold shadow-xl mr-2">Call 6363331537</a>
-          <a href="tel:9886061537" className="cta-button btn-lg text-lg md:text-xl font-bold shadow-xl ml-2">Call 9886061537</a>
+          <a href="tel:6363331537" className="cta-button btn-lg text-lg md:text-xl font-bold shadow-xl">Call 6363331537</a>
         </div>
       </section>
 

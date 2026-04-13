@@ -27,7 +27,7 @@ const ServiceCard = ({ image, title, path }: ServiceCardProps) => {
           {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-secondary text-secondary" />)}
         </div>
         <a 
-          href="tel:7795891177" 
+          href="tel:6363331537" 
           className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/95 hover:to-secondary text-secondary-foreground px-5 py-3 rounded-lg text-sm md:text-base font-bold transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1 group/btn click-press active:shadow-md"
         >
           <Phone className="w-4 h-4 group-hover/btn:animate-pulse" />

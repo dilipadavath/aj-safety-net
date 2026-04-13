@@ -2,7 +2,7 @@
 
 Campaign: Bangalore_Search_Leads_Vicky
 Final URL domain: https://vickysafetynets.co.in/
-Primary call number: +91 7795891177
+Primary call number: +91 6363331537
 
 ## Upload Order
 1. campaign_upload_fixed.xlsx

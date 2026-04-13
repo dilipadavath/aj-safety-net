@@ -8,7 +8,7 @@ OUT.mkdir(exist_ok=True)
 
 CAMPAIGN = "Bangalore_Search_Leads_Vicky"
 FINAL_URL = "https://vickysafetynets.co.in/"
-PHONE = "+91 7795891177"
+PHONE = "+91 6363331537"
 
 
 def build_campaign() -> pd.DataFrame:

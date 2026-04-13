@@ -68,7 +68,7 @@ const SafetyNets = () => {
             Need Safety Nets for Your Property?
           </h2>
           <p className="text-background/80 text-lg mb-8">Free site inspection and installation across Bangalore</p>
-          <a href="tel:7795891177" className="cta-button text-lg">Call For Free Quote</a>
+          <a href="tel:6363331537" className="cta-button text-lg">Call For Free Quote</a>
         </div>
       </ParallaxSection>
 
@@ -82,7 +82,7 @@ const SafetyNets = () => {
                 <div>
                   <h3 className="font-heading font-bold text-xl text-primary mb-2">{s.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
-                  <a href="tel:7795891177" className="inline-block mt-3 cta-button text-sm">Enquire Now</a>
+                  <a href="tel:6363331537" className="inline-block mt-3 cta-button text-sm">Enquire Now</a>
                 </div>
               </div>
             ))}

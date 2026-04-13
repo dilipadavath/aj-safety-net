@@ -28,14 +28,7 @@ const EnquiryBar = () => {
             <Phone className="w-5 h-5" />
             +91 6363331537
           </a>
-          {/* <a
-            href="tel:9886061537"
-            onClick={() => trackLeadClick("call", "enquiry_bar")}
-            className="cta-button flex items-center justify-center gap-2 text-lg md:text-xl w-full sm:w-auto click-press hover-lift"
-          >
-            <Phone className="w-5 h-5" />
-            +91 9886061537
-          </a> */}
+
           <a
             href={WHATSAPP_URL}
             target="_blank"

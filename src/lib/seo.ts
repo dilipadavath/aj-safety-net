@@ -4,7 +4,7 @@ export const DEFAULT_OG_IMAGE = "/vicky-logo.png";
 
 export const BUSINESS = {
   name: "AJ Safety Nets",
-  phone: "+91 7795891177",
+  phone: "+91 6363331537",
   email: "vickysafetynets552@gmail.com",
   address: "# 17, 17th Cross, MES Road, Muthyalanagar, Bangalore-54",
   city: "Bangalore",

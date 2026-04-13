@@ -450,7 +450,7 @@ const ServiceDetail = ({ type }: ServiceDetailProps) => {
                       WhatsApp For Fast Quote
                     </span>
                   </a>
-                  <a href="mailto:vickysafetynets552@gmail.com" className="block text-center bg-primary text-primary-foreground px-4 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                  <a href="mailto:ajsafetynest537@gmail.com" className="block text-center bg-primary text-primary-foreground px-4 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                     Email Us
                   </a>
                 </div>

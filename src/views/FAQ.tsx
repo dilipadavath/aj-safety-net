@@ -17,7 +17,7 @@ const faqs = [
   { q: "Do your nets come with a warranty?", a: "Yes, all our safety nets come with a warranty. The warranty period varies based on the product and material type. Contact us for specific warranty details." },
   { q: "Are your nets safe for children?", a: "Absolutely! Our nets are specifically designed with child safety in mind. We use non-toxic materials with appropriate mesh sizes that children cannot pass through." },
   { q: "Can safety nets be removed later?", a: "Yes, our safety nets can be removed when no longer needed. The installation method we use causes minimal damage to your property." },
-  { q: "How do I get a quote?", a: "Simply call us at +91 6363331537 or email us at vickysafetynets552@gmail.com. We will arrange a free site visit and provide a detailed quote based on your requirements." },
+  { q: "How do I get a quote?", a: "Simply call us at +91 6363331537 or email us at ajsafetynest537@gmail.com. We will arrange a free site visit and provide a detailed quote based on your requirements." },
 ];
 
 const FAQ = () => {

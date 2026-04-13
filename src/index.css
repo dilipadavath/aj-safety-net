@@ -233,6 +233,11 @@
     font-size: 1rem;
     position: relative;
     overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 
       0 10px 30px hsl(var(--cta) / 0.35),
       inset 0 1px 0 rgba(255, 255, 255, 0.2);

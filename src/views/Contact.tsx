@@ -36,7 +36,7 @@ const Contact = () => {
       "Message:",
       formData.message || "No additional message provided.",
     ].join("\n");
-    window.location.href = `mailto:vickysafetynets552@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:ajsafetynest537@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (
@@ -61,7 +61,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-heading font-semibold text-lg">Our Address</h3>
-                <p className="text-muted-foreground"># 17, 17th Cross, MES Road, Muthyalanagar, Bangalore-54</p>
+                <p className="text-muted-foreground">Bangalore</p>
               </div>
             </div>
             <div className="flex items-start gap-4 bg-card rounded-xl shadow-lg p-5 border border-primary/10">
@@ -103,7 +103,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-heading font-semibold text-lg">Email</h3>
-                <a href="mailto:vickysafetynets552@gmail.com" className="text-primary hover:underline">vickysafetynets552@gmail.com</a>
+                <a href="mailto:ajsafetynest537@gmail.com" className="text-primary hover:underline">ajsafetynest537@gmail.com</a>
               </div>
             </div>
           </div>

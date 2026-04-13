@@ -191,13 +191,13 @@ const Index = () => {
       <section className="bg-background py-10">
         <div className="container">
           <div className="rounded-3xl border border-border bg-card p-6 shadow-sm md:p-8">
-            <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+            <div className="grid gap-6 md:gap-8 grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
               <div>
                 <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
                   <BadgeCheck className="h-4 w-4" />
                   Built For Faster Phone Leads
                 </p>
-                <h2 className="mb-3 font-heading text-3xl font-bold text-primary md:text-4xl">
+                <h2 className="mb-3 font-heading text-2xl md:text-3xl lg:text-4xl font-bold text-primary break-words">
                   Free Site Visit, Quick Quote, And Direct Phone Support
                 </h2>
                 <p className="max-w-2xl text-muted-foreground leading-7">

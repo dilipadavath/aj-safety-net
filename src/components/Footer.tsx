@@ -93,15 +93,15 @@ const Footer = () => {
             <div className="space-between-loose">
               <div className="flex items-start gap-3 p-4 rounded-lg hover:bg-white/10 transition-all duration-300 group hover-lift">
                 <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-background group-hover:scale-110 transition-transform" />
-                <p className="text-sm opacity-90 font-medium"># 17, 17th Cross, MES Road, Muthyalanagar, Bangalore-54</p>
+                <p className="text-sm opacity-90 font-medium">Bangalore</p>
               </div>
               <a href="tel:6363331537" className="flex items-center gap-3 p-4 rounded-lg hover:bg-white/10 transition-all duration-300 hover:translate-x-1 group hover-lift click-press">
                 <Phone className="h-5 w-5 shrink-0 text-background group-hover:animate-pulse" />
                 <span className="text-sm font-semibold">+91 6363331537</span>
               </a>
-              <a href="mailto:vickysafetynets552@gmail.com" className="flex items-center gap-3 p-4 rounded-lg hover:bg-white/10 transition-all duration-300 hover:translate-x-1 group hover-lift click-press">
+              <a href="mailto:ajsafetynest537@gmail.com" className="flex items-center gap-3 p-4 rounded-lg hover:bg-white/10 transition-all duration-300 hover:translate-x-1 group hover-lift click-press">
                 <Mail className="h-5 w-5 shrink-0 text-background" />
-                <span className="text-sm font-semibold truncate">vickysafetynets552@gmail.com</span>
+                <span className="text-sm font-semibold truncate">ajsafetynest537@gmail.com</span>
               </a>
             </div>
           </div>

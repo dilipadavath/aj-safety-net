@@ -61,6 +61,22 @@ const schemaList = [getLocalBusinessSchema(), ...(schema ? (Array.isArray(schema
     {schemaList.map((item) => (
       <script type="application/ld+json" set:html={JSON.stringify(item)} />
     ))}
+    <!-- Google Analytics tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BXGDKFLFM5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BXGDKFLFM5');
+    </script>
+    <!-- Google Ads Conversion Tracking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18108249187"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-18108249187');
+    </script>
   </head>
   <body>
     <slot />
